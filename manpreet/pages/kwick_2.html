@@ -1,0 +1,53 @@
+<div style="width: 800px; float:left;">
+	<h3>portfolio</h3>
+        <div style="float:left; height: 500px;">
+            <div class="prev arrow-up"></div>
+            <div id="work" class="portfolio">
+                <ul>
+                    <li class="portlist" id="naamsimran" onclick="loadContent(this.id);">
+                        <img class="portlisticon" src="../images/portfolio/1.png" alt="" /><br>
+                        <span class="label">naamsimran.webatu.com</span>
+                    </li>
+                    <li class="portlist" id="dbinstaller" onclick="loadContent(this.id);">
+                        <img class="portlisticon" src="../images/portfolio/2.png" alt="" /><br>
+                        <span class="label">DB Installer</span>
+                    </li>
+                    <li class="portlist" id="dataaccess" onclick="loadContent(this.id);">
+                        <img class="portlisticon" src="../images/portfolio/3.png" alt="" /><br>
+                        <span class="label">MySQL DataAccess</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="next arrow-down"></div>            
+        </div>
+        <div id="workcontent">
+            
+        </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#workcontent").load("portfolioitems/naamsimran.html");
+	setTimeout(loadCarousel, 50);
+});
+
+function loadContent(id) {
+    $("#workcontent").fadeOut(1, function() {
+		$("#workcontent").load("portfolioitems/" + id + ".html", function() {
+		    $("#workcontent").fadeIn('slow');
+		});
+	}); 
+}
+
+function loadCarousel() {
+	$("#work").jCarouselLite({
+		btnNext: ".next",
+		btnPrev: ".prev",
+		vertical: true,
+		mouseWheel: true,
+		speed: 800,
+		circular: false,
+		visible: 3        
+	});
+}
+	
+</script>

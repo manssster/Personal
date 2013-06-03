@@ -1,0 +1,261 @@
+body {
+        background-color: #202020;
+        padding: 50px;
+        background-image:url('../images/back.png');
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-position:bottom left;
+        margin:0px;        
+}
+
+img {
+        border: 0px;
+}
+
+.listitems {
+        font-family: Helvetica, sans-serif;
+        font-size: 12px;
+        color: #bbbbbb;
+        letter-spacing: -1px;
+        font-weight: 400;
+        margin-bottom: 5px;
+        text-shadow: 0px 0px 1px #ffffff;
+}
+
+a:link {
+        font-family: Helvetica, sans-serif;
+        font-size: 12px;
+        color: #bbbbbb;
+        font-weight: bold;
+        text-decoration: underline; 
+}
+
+a:active {
+        font-family: Helvetica, sans-serif;
+        font-size: 12px;
+        color: #bbbbbb;
+        font-weight: bold;
+        text-decoration: underline; 
+}
+a:visited {
+        font-family: Helvetica, sans-serif;
+        font-size: 12px;
+        color: #bbbbbb;
+        font-weight: bold;
+        text-decoration: underline; 
+}
+
+a:hover {
+        font-family: Helvetica, sans-serif;
+        font-size: 12px;
+        color: #bbbbbb;
+        font-weight: bold;
+        text-decoration: underline; 
+}
+
+h3 {
+        font-family: Helvetica, sans-serif;
+        font-size: 22px;
+        color: #bbbbbb;
+        letter-spacing: -1px;
+        font-weight: 400;
+        margin-bottom: 5px;
+        text-shadow: 0px 0px 1px #ffffff;
+}
+
+h2 {
+        font-family: Helvetica, sans-serif;
+        font-size: 14px;
+        color: #bbbbbb;
+        letter-spacing: -1px;
+        font-weight: bolder;
+}
+
+p {
+        font-family: Helvetica, sans-serif;
+        font-size: 14px;
+        color: #bbbbbb;
+        font-weight: 400;
+}
+
+input, textarea {
+        padding-left: 3px;
+        font-family: Helvetica, sans-serif;
+        font-size: 12px;
+        color: #bbbbbb;
+        font-weight: 500;
+        background-color: #4A4A4A;
+        border: solid 1px #757575;
+        -webkit-border-radius: 5px; 
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+}
+
+.inputfocus {
+        padding-left: 3px;
+        font-family: Helvetica, sans-serif;
+        font-size: 12px;
+        color: #E9E9E9;
+        font-weight: 500;
+        background-color: #2a2a2a;
+        border: solid 1px #151515;
+        -webkit-border-radius: 5px; 
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+}
+
+.inputhover {
+        color: #E9E9E9;
+        font-weight: 500;
+        background-color: #2a2a2a;
+        border: solid 1px #151515;
+        -webkit-border-radius: 5px; 
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+}
+
+button{
+        width:80px;
+        height:25px;
+}
+
+label {
+        padding-left: 3px;
+        font-family: Helvetica, sans-serif;
+        font-size: 12px;
+        color: #bbbbbb;
+        font-weight: 400;
+        letter-spacing: -1px;
+}
+
+.label {
+        padding-left: 3px;
+        font-family: Helvetica, sans-serif;
+        font-size: 12px;
+        color: #bbbbbb;
+        font-weight: 400;
+        letter-spacing: -1px;
+}
+
+.labels {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-size:x-large;
+        font-weight: bold;
+}
+
+.labeldiv {
+        text-align:center;     
+        padding-top:15px;
+        padding-left:10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+}
+
+.row {
+        padding-bottom: 8px;
+}
+
+.portlist {
+        text-align: center;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        padding: 10px;
+        border: solid 1px #757575;
+        width: 140px;
+        height: 90px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        -moz-box-shadow: 1px 1px 1px  #c0c0c0;
+        -webkit-box-shadow: 1px 1px 1px #c0c0c0;
+        background-color: #4a4a4a;
+}
+
+.portlisticon {
+
+}
+
+.arrow-up {
+        margin:auto;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #c0c0c0;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+}
+
+.arrow-down {
+        margin:auto;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #c0c0c0;
+        padding-top: 10px;
+}
+
+#main {
+        width:800px;
+        margin: auto;
+}
+
+#name {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-size:x-large;
+        font-weight: bold;
+        color: #c0c0c0;
+        text-shadow: 0px 1px 1px #ffffff;
+}
+
+#header {
+
+}
+
+#content {
+        margin: auto;
+        width:800px;
+        height:550px;
+        background-color:#333333;
+        border: solid 1px #222222;
+        padding-left: 10px;
+        padding-right: 10px;
+		-moz-box-shadow: 0px 0px 15px #707070; /* FF3.5 - 3.6 */
+		-webkit-box-shadow: 0px 0px 15px #707070; /* Saf3.0+, Chrome */
+		box-shadow: 0px 0px 15px #707070; /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+}
+
+#work {
+        margin-bottom: 10px;
+           
+}
+
+#workcontent {
+        float: left;
+        width: 610px;
+        height:460px;
+        border: 1px solid #2a2a2a;
+        background-color: #555555;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        margin-left: 10px;
+        -moz-box-shadow: 1px 1px 5px  #c0c0c0;
+        -webkit-box-shadow: 1px 1px 5px #c0c0c0;
+        padding-left: 10px;
+}
+
+#message_ajax {
+	    float: left;
+	    padding-left: 10px;
+	    font-family: Helvetica, sans-serif;
+        font-size: 14px;
+        color: #bbbbbb;
+        letter-spacing: -1px;
+        font-weight: bolder;
+}
+
+.form {
+
+}
+
+

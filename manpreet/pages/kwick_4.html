@@ -1,0 +1,58 @@
+<div style="width: 500px; float:left;">
+	<h3>contact</h3>
+		<p>
+		Email me<br/><a href="mailto:manssster@gmail.com">manssster@gmail.com</a>
+		</p>
+		<br/>
+        <p>
+        Send me a message
+        </p>
+            <div class="form"> 
+                <form id="contactform"> 
+                        <div class="row"> 
+                                <label>Name</label><br />	
+                                <input id="contactname" name="contactname" onfocus="this.className='inputfocus';" onblur="this.className='';" onmouseover="this.className='inputhover';" onmouseout="this.className='';" type="text" />		
+                        </div> 
+                        <div class="row"> 
+                                <label>Email</label><br />
+                                <input id="contactemail" name="contactemail" onfocus="this.className='inputfocus';" onblur="this.className='';" onmouseover="this.className='inputhover';" onmouseout="this.className='';" type="text" />		
+                        </div>
+                        <div class="row"> 
+                                <label>Subject</label><br />		
+                                <input id="contactsubject" name="contactsubject" onfocus="this.className='inputfocus';" onblur="this.className='';" onmouseover="this.className='inputhover';" onmouseout="this.className='';" type="text" />		
+                        </div> 
+                        <div class="row"> 
+                                <label>Body</label><br />	
+                                <textarea rows="6" cols="50" onfocus="this.className='inputfocus';" onblur="this.className='';" onmouseover="this.className='inputhover';" onmouseout="this.className='';" id="contactmessage" name="contactmessage"></textarea>		
+                        </div> 
+                    <br/>
+                    <div style="float:left;">
+                        <input type="submit" style="width: 80px; height:25px;" onmouseover="this.className='inputhover';" onmouseout="this.className='';" value="Send" />
+                    </div>
+                    <div id="message_ajax"></div>
+                </form> 
+            </div>     
+            <script type="text/javascript">
+        	$(function(){
+       		    $("#contactform").submit(function(e){
+       		        e.preventDefault();
+       		        dataString = $("#contactform").serialize();
+       		        $.ajax({
+       		        type: "POST",
+       		        url: "contact.php",
+       		        data: dataString,
+       		        dataType: "json",
+       		        success: function(data) {
+       		            if(data.status == "OK"){
+       		                $("#message_ajax").html("<div class='successMessage' style='float:left;'><img src='../images/check.png' height='25px' width='25px'></div><div style='float:left; padding-left:10px; padding-top:5px;'>Thank you.</div>");
+        		        } else {
+       		                $("#message_ajax").html("<div class='errorMessage' style='float:left;'><img src='../images/cross.png' height='25px' width='25px'></div><div style='float:left; padding-left:10px; padding-top:5px;'>" + data.status + "</div>");
+       		             	$('#' + data.focusfield).focus();
+       		            }
+       		        }
+       		        });         
+       		    });
+       		});
+            </script>     
+        </p>
+</div>

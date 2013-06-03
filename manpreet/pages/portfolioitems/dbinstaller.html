@@ -1,0 +1,54 @@
+<script type="text/javascript">
+$(function() {
+	$('#gallery a').lightBox();
+});
+</script>
+<style type="text/css">
+/* jQuery lightBox plugin - Gallery style */
+#gallery {
+	width: 520px;
+}
+#gallery ul { list-style: none; }
+#gallery ul li { display: inline; }
+#gallery ul img {
+	border: 5px solid #3e3e3e;
+	border-width: 5px 5px 20px;
+}
+#gallery ul a:hover img {
+	border: 5px solid #cacaca;
+	border-width: 5px 5px 20px;
+}
+#gallery ul a:hover { color: #cacaca; }
+</style>
+<div style="padding-right: 10px;">
+    <h2>DB Installer</h2>
+    <p>This is an application to facilitate installation of database scripts ie. table creations, procedure creations, data insertions etc into the database. Currently this only supports MySQL database but the plan is to make this work on other popular databases as well.</p>
+    <p>Technologies used</p>
+    <ul class="listitems">
+        <li>Java</li>
+        <li>Spring Framework</li>
+        <li>Netbeans 7.0</li>        
+        <li>MySQL</li>
+    </ul>
+    <p>Project URL</p><a href="http://code.google.com/p/dbinstaller/">http://code.google.com/p/dbinstaller/</a>
+	<p>Screenshots</p>
+	<div id="gallery">
+		<ul>
+			<li>
+				<a style="color:transparent;" href="../images/portfolio/screenshots/dbinstaller/image1.jpg" title="DBInstaller installs multiple database scripts on the database.">
+					<img src="../images/portfolio/screenshots/dbinstaller/thumb_image1.jpg" width="72" height="72" alt="" />
+				</a>
+			</li>
+			<li>
+				<a style="color:transparent;" href="../images/portfolio/screenshots/dbinstaller/image2.jpg" title="Select multiple sql scripts and click a script to preview or move the execution up/down.">
+					<img src="../images/portfolio/screenshots/dbinstaller/thumb_image2.jpg" width="72" height="72" alt="" />
+				</a>
+			</li>
+			<li>
+				<a style="color:transparent;" href="../images/portfolio/screenshots/dbinstaller/image3.jpg" title="Execute the script and view results.">
+					<img src="../images/portfolio/screenshots/dbinstaller/thumb_image3.jpg" width="72" height="72" alt="" />
+				</a>
+			</li>
+		</ul>
+	</div>	
+</div>
